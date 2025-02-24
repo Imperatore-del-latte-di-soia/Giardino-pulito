@@ -38,7 +38,7 @@
         <p>scrivi per <a href="mailto:a.pardo74@vaccarinict.edu.it">
         informazioni</a></p>
     </div>
-<button id="button"> clicca qui per vedere un lampadario</button>
+<button id="button" onclick="Show()"> clicca qui per vedere un lampadario</button>
 <img id="img" style="display: none;" src="https://www.pianetalowcost.it/9447-large_default/lampadario-sospeso-led-72w-3-cerchi-pendente-cerchio-rotondo-con-anelli-bianco-design-moderno-per-camera-salotto.jpg" alt="non si caricsss">
 </body> 
 
@@ -47,7 +47,10 @@
 <script>
     let bottom = document.getElementById('button')
     let img = document.getElementById('img')
-    if (bottom.onclick == true) {
-        img.hidden = false
+    function Show() { 
+        img.style.display = 'block'
+        if (bottom.onclick == true) {
+       
+    }
     }
 </script>
